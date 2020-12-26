@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC0DCACE257159F1003B5372 /* ExecutionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0DCACD257159F1003B5372 /* ExecutionHandler.m */; };
+		AC0DCAD725718483003B5372 /* RandomFloatDataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0DCAD625718483003B5372 /* RandomFloatDataGenerator.m */; };
+		AC0DCAE225719391003B5372 /* SIMDComputations.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0DCAE125719391003B5372 /* SIMDComputations.m */; };
+		ACF505B42570CC9C009ED8B0 /* GPUMatrixOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF505B32570CC9C009ED8B0 /* GPUMatrixOperations.m */; };
+		ACFF6207257050C3007C1635 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFF6206257050C3007C1635 /* main.m */; };
+		ACFF621225705225007C1635 /* GPUIntristics.metal in Sources */ = {isa = PBXBuildFile; fileRef = ACFF621125705225007C1635 /* GPUIntristics.metal */; };
+		ACFF6217257071BD007C1635 /* Context.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFF6216257071BD007C1635 /* Context.m */; };
+		ACFF621D257088FD007C1635 /* GPUCalculationFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFF621C257088FD007C1635 /* GPUCalculationFunction.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ACFF6201257050C3007C1635 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AC0DCACC2571599A003B5372 /* ExecutionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExecutionHandler.h; sourceTree = "<group>"; };
+		AC0DCACD257159F1003B5372 /* ExecutionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExecutionHandler.m; sourceTree = "<group>"; };
+		AC0DCAD625718483003B5372 /* RandomFloatDataGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomFloatDataGenerator.m; sourceTree = "<group>"; };
+		AC0DCADA25718495003B5372 /* RandomFloatDataGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomFloatDataGenerator.h; sourceTree = "<group>"; };
+		AC0DCAE025719366003B5372 /* SIMDComputations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIMDComputations.h; sourceTree = "<group>"; };
+		AC0DCAE125719391003B5372 /* SIMDComputations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIMDComputations.m; sourceTree = "<group>"; };
+		ACF505AF2570B378009ED8B0 /* GPUMatrixOperations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUMatrixOperations.h; sourceTree = "<group>"; };
+		ACF505B32570CC9C009ED8B0 /* GPUMatrixOperations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUMatrixOperations.m; sourceTree = "<group>"; };
+		ACFF6203257050C3007C1635 /* MetalGPGPU */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MetalGPGPU; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACFF6206257050C3007C1635 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ACFF621125705225007C1635 /* GPUIntristics.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GPUIntristics.metal; sourceTree = "<group>"; };
+		ACFF621525706FB1007C1635 /* Context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
+		ACFF6216257071BD007C1635 /* Context.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Context.m; sourceTree = "<group>"; };
+		ACFF621A25707406007C1635 /* GPUCalculationFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUCalculationFunction.h; sourceTree = "<group>"; };
+		ACFF621C257088FD007C1635 /* GPUCalculationFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUCalculationFunction.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACFF6200257050C3007C1635 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC0DCAD225718399003B5372 /* GPUComputationClasses */ = {
+			isa = PBXGroup;
+			children = (
+				ACFF6216257071BD007C1635 /* Context.m */,
+				ACFF621C257088FD007C1635 /* GPUCalculationFunction.m */,
+				ACF505B32570CC9C009ED8B0 /* GPUMatrixOperations.m */,
+			);
+			path = GPUComputationClasses;
+			sourceTree = "<group>";
+		};
+		AC0DCAD3257183C4003B5372 /* SIMDComputationClasses */ = {
+			isa = PBXGroup;
+			children = (
+				AC0DCAE125719391003B5372 /* SIMDComputations.m */,
+			);
+			path = SIMDComputationClasses;
+			sourceTree = "<group>";
+		};
+		ACFF61FA257050C3007C1635 = {
+			isa = PBXGroup;
+			children = (
+				ACFF6205257050C3007C1635 /* MetalGPGPU */,
+				ACFF6204257050C3007C1635 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACFF6204257050C3007C1635 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACFF6203257050C3007C1635 /* MetalGPGPU */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACFF6205257050C3007C1635 /* MetalGPGPU */ = {
+			isa = PBXGroup;
+			children = (
+				ACFF620E25705113007C1635 /* include */,
+				ACFF6210257051FC007C1635 /* metal */,
+				ACFF620F25705129007C1635 /* source */,
+				ACFF6206257050C3007C1635 /* main.m */,
+			);
+			path = MetalGPGPU;
+			sourceTree = "<group>";
+		};
+		ACFF620E25705113007C1635 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				ACF505AF2570B378009ED8B0 /* GPUMatrixOperations.h */,
+				ACFF621A25707406007C1635 /* GPUCalculationFunction.h */,
+				ACFF621525706FB1007C1635 /* Context.h */,
+				AC0DCACC2571599A003B5372 /* ExecutionHandler.h */,
+				AC0DCADA25718495003B5372 /* RandomFloatDataGenerator.h */,
+				AC0DCAE025719366003B5372 /* SIMDComputations.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		ACFF620F25705129007C1635 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				AC0DCAD3257183C4003B5372 /* SIMDComputationClasses */,
+				AC0DCAD225718399003B5372 /* GPUComputationClasses */,
+				AC0DCACD257159F1003B5372 /* ExecutionHandler.m */,
+				AC0DCAD625718483003B5372 /* RandomFloatDataGenerator.m */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		ACFF6210257051FC007C1635 /* metal */ = {
+			isa = PBXGroup;
+			children = (
+				ACFF621125705225007C1635 /* GPUIntristics.metal */,
+			);
+			path = metal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACFF6202257050C3007C1635 /* MetalGPGPU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACFF620A257050C3007C1635 /* Build configuration list for PBXNativeTarget "MetalGPGPU" */;
+			buildPhases = (
+				ACFF61FF257050C3007C1635 /* Sources */,
+				ACFF6200257050C3007C1635 /* Frameworks */,
+				ACFF6201257050C3007C1635 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetalGPGPU;
+			productName = MetalGPGPU;
+			productReference = ACFF6203257050C3007C1635 /* MetalGPGPU */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACFF61FB257050C3007C1635 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					ACFF6202257050C3007C1635 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = ACFF61FE257050C3007C1635 /* Build configuration list for PBXProject "MetalGPGPU" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACFF61FA257050C3007C1635;
+			productRefGroup = ACFF6204257050C3007C1635 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACFF6202257050C3007C1635 /* MetalGPGPU */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACFF61FF257050C3007C1635 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACFF621D257088FD007C1635 /* GPUCalculationFunction.m in Sources */,
+				AC0DCAE225719391003B5372 /* SIMDComputations.m in Sources */,
+				ACFF621225705225007C1635 /* GPUIntristics.metal in Sources */,
+				ACF505B42570CC9C009ED8B0 /* GPUMatrixOperations.m in Sources */,
+				AC0DCACE257159F1003B5372 /* ExecutionHandler.m in Sources */,
+				AC0DCAD725718483003B5372 /* RandomFloatDataGenerator.m in Sources */,
+				ACFF6217257071BD007C1635 /* Context.m in Sources */,
+				ACFF6207257050C3007C1635 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ACFF6208257050C3007C1635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		ACFF6209257050C3007C1635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		ACFF620B257050C3007C1635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Z7LMPAV53;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ACFF620C257050C3007C1635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Z7LMPAV53;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACFF61FE257050C3007C1635 /* Build configuration list for PBXProject "MetalGPGPU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACFF6208257050C3007C1635 /* Debug */,
+				ACFF6209257050C3007C1635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACFF620A257050C3007C1635 /* Build configuration list for PBXNativeTarget "MetalGPGPU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACFF620B257050C3007C1635 /* Debug */,
+				ACFF620C257050C3007C1635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACFF61FB257050C3007C1635 /* Project object */;
+}
